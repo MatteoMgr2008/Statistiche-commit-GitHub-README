@@ -16,6 +16,10 @@ app.get('/graph', handlers.getGraph);
 
 app.get('/data', handlers.getData);
 
-app.listen(port, (): void => {
-    console.log(`Server is Running on Port ${port}`);
-});
+if (process.env.VERCEL) {
+    module.exports = app;
+} else {
+    app.listen(port, (): void => {
+        console.log(`Server is Running on Port ${port}`);
+    });
+}
