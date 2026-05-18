@@ -9,12 +9,10 @@ export const graphSvg = (props: GraphArgs) => `
         viewBox="0 0 ${props.width} ${props.height}"
         fill="none"
         xmlns="http://www.w3.org/2000/svg">
-            <rect xmlns="http://www.w3.org/2000/svg" data-testid="card_bg" id="cardBg"
-            x="0" y="0" rx="${props.radius}" height="100%" stroke="#E4E2E2" fill-opacity="1"
-            width="100%" fill="#${props.colors.bgColor}" stroke-opacity="1" style="stroke:#${
-                props.colors.borderColor
-            }; stroke-width:1;"/>
-
+        <rect xmlns="http://www.w3.org/2000/svg" data-testid="card_bg" id="cardBg"
+        x="0.5" y="0.5" rx="${props.radius}" height="99%" fill-opacity="1"
+        width="99%" fill="#${props.colors.bgColor}" stroke="#${props.colors.borderColor}"
+        stroke-opacity="1" stroke-width="1"/>
             <style>
                 body {
                     font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
