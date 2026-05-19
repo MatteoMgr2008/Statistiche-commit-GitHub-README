@@ -436,7 +436,9 @@ p {
     width: 70%;
     background-color: #ffcfe9;
     margin-top: 2rem;
-    border-radius: 4px;
+    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
 }
 
 /* .ct-chart {
@@ -604,7 +606,7 @@ p {
 .copy_text {
     position: relative;
     background: #fff;
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     border-radius: 10px;
     display: flex;
     width: 100%;
