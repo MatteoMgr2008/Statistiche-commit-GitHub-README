@@ -11,14 +11,16 @@ export class Card {
         private readonly title = '',
         private readonly area = false,
         private readonly showGrid = true,
+        private readonly locale = 'en' // Nuovo parametro per la localizzazione, con valore predefinito 'en'
     ) {}
 
     private getOptions() {
+        const isItalian = this.locale === 'it'; // Controlla se la lingua è italiana ovvero se locale è impostata a 'it'
         return {
             width: this.width,
             height: this.height,
             axisY: {
-                title: 'Contributions',
+                title: isItalian ? 'Contributi' : 'Contributions',
                 onlyInteger: true,
                 offset: 70,
                 labelOffset: {
@@ -28,7 +30,7 @@ export class Card {
                 showGrid: this.showGrid,
             },
             axisX: {
-                title: 'Days',
+                title: isItalian ? 'Giorni' : 'Days',
                 offset: 50,
                 labelOffset: {
                     x: -4.5,
