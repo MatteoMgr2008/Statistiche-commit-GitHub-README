@@ -129,7 +129,7 @@ export class Utilities {
             options['custom_title'] = String(this.queryString.custom_title);
 
         if (this.queryString.locale)
-            options['locale'] = String(this.queryString.locale); // Aggiunto per supportare la localizzazione in italiano
+            options['locale'] = String(this.queryString.locale); // Optional locale (e.g. 'it') to control language-specific labels and formatting
 
         return options;
     }
@@ -157,7 +157,7 @@ export class Utilities {
                 title,
                 options.area,
                 options.grid,
-                options.locale, // Parametro per la localizzazione, passato al costruttore della classe Card
+                options.locale, // Locale identifier (e.g. 'it') passed to the Card constructor to localize chart labels and formatting
             );
             const getChart = await graph.buildGraph(fetchCalendarData.contributions);
             return {

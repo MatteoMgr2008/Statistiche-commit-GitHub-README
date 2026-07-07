@@ -11,11 +11,11 @@ export class Card {
         private readonly title = '',
         private readonly area = false,
         private readonly showGrid = true,
-        private readonly locale = 'en' // Nuovo parametro per la localizzazione, con valore predefinito 'en'
+        private readonly locale = 'en' // Locale identifier (default 'en') that determines language used for chart labels
     ) {}
 
     private getOptions() {
-        const isItalian = this.locale === 'it'; // Controlla se la lingua è italiana ovvero se locale è impostata a 'it'
+        const isItalian = this.locale === 'it'; // Determine whether to render labels in Italian when locale equals 'it'
         return {
             width: this.width,
             height: this.height,

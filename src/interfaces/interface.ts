@@ -27,7 +27,7 @@ export class QueryOption {
     radius: number;
     height: number;
     days: number;
-    locale?: string; // Aggiunto per supportare la localizzazione in italiano
+    locale?: string; // Optional locale code (e.g. 'it' for Italian) used to localize labels
 }
 
 export class ParsedQs {
@@ -50,7 +50,7 @@ export class ParsedQs {
     from?: string;
     to?: string;
     grid?: string;
-    locale?: string; // Aggiunto per supportare la localizzazione in italiano
+    locale?: string; // Optional locale code (e.g. 'it' for Italian) used to localize labels
 }
 
 export class GraphArgs {
