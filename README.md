@@ -1,3 +1,304 @@
+# Statistiche-commit-GitHub-README
+
+🇮🇹 [Italiano](#italiano) | 🇬🇧 [English](#english)
+
+> **🇮🇹 Nota sul fork:** questo repository è un fork personale di [MatteoMgr2008](https://github.com/MatteoMgr2008) del progetto open source [github-readme-activity-graph](https://github.com/Ashutosh00710/github-readme-activity-graph) di [Ashutosh Dwivedi](https://github.com/Ashutosh00710) e dei suoi contributori. Il fork è pubblicato su Vercel (`https://statistiche-commit-git-hub-readme.vercel.app`) e genera il grafico dei contributi ("🏅 My GitHub activity graph") mostrato nel README del mio profilo GitHub ([MatteoMgr2008/MatteoMgr2008](https://github.com/MatteoMgr2008/MatteoMgr2008)). Rispetto all'originale aggiunge il parametro opzionale `locale` (ad es. `locale=it`) per mostrare le etichette del grafico in italiano. Tutto il merito del progetto va agli autori originali; la documentazione qui sotto è quella del progetto upstream (in italiano tradotta, in inglese invariata).
+>
+> **🇬🇧 Fork note:** this repository is a personal fork by [MatteoMgr2008](https://github.com/MatteoMgr2008) of the open-source project [github-readme-activity-graph](https://github.com/Ashutosh00710/github-readme-activity-graph) by [Ashutosh Dwivedi](https://github.com/Ashutosh00710) and its contributors. The fork is deployed on Vercel (`https://statistiche-commit-git-hub-readme.vercel.app`) and generates the contribution graph ("🏅 My GitHub activity graph") shown on my GitHub profile README ([MatteoMgr2008/MatteoMgr2008](https://github.com/MatteoMgr2008/MatteoMgr2008)). Compared to the original it adds the optional `locale` parameter (e.g. `locale=it`) to show the graph labels in Italian. All credit for the project goes to the original authors; the documentation below is the upstream project's (translated in Italian, unchanged in English).
+
+---
+
+<a id="italiano"></a>
+## 🇮🇹 Italiano
+
+<p align="center">
+    <img src="asset/logo.svg" height="150">
+</p>
+
+<h1 align="center">Github Readme Activity Graph</h1>
+
+<a href="https://jb.gg/OpenSourceSupport">
+<p align="center">
+    <img src="https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.svg" height="150">
+</p>
+</a>
+<h3 align="center"><a href="https://jb.gg/OpenSourceSupport">Supportato da JetBrains</a></h3>
+Un grafico delle attività generato dinamicamente per mostrare le tue attività su GitHub degli ultimi 31 giorni.
+
+### ⚠️ AVVISO: DEPLOYMENT SPOSTATO ⚠️
+
+Il deployment ufficiale ora è `https://github-readme-activity-graph.vercel.app`. I deployment precedenti su `https://activity-graph.herokuapp.com` (piano gratuito di Heroku dismesso) e `https://github-readme-activity-graph.cyclic.app` (Cyclic.sh ha chiuso all'inizio del 2025) non sono più raggiungibili. Per maggiori dettagli vedi la [issue #197](https://github.com/Ashutosh00710/github-readme-activity-graph/issues/197#issuecomment-1560633754).
+
+Fai riferimento al link aggiornato [qui](#it-come-usarlo)
+
+<a id="it-indice"></a>
+### Indice
+
+- [Come usarlo](#it-come-usarlo)
+    - [Attenzione ⚠](#it-attenzione)
+- [Usare i temi](#it-usare-i-temi)
+- [Temi disponibili](#it-temi-disponibili)
+- [Personalizzazione](#it-personalizzazione)
+    - [Opzioni comuni](#it-opzioni-comuni)
+- [Deploy sulla tua istanza Replit](#it-deploy-replit)
+    - [Segui i passaggi](#it-segui-i-passaggi)
+- [Deploy sulla tua istanza Vercel](#it-deploy-vercel)
+    - [Primo metodo](#it-primo-metodo)
+    - [Secondo metodo](#it-secondo-metodo)
+    - [Infine](#it-infine)
+- [Contribuire](#it-contribuire)
+- [Core Team 💻](#it-core-team)
+- [Contributori ✨](#it-contributori)
+- [Risorse usate per costruire questo progetto](#it-risorse)
+- [Cronologia delle stelle](#it-cronologia-stelle)
+    - [Fatto con ❤ e TypeScript](#it-fatto-con)
+
+<a id="it-come-usarlo"></a>
+### Come usarlo
+
+Incolla semplicemente il seguente URL nel README del tuo profilo e hai finito.
+
+**Passa il tuo `username` nell'URL**
+
+```md
+[![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Ashutosh00710)](https://github.com/ashutosh00710/github-readme-activity-graph)
+```
+
+<a id="it-attenzione"></a>
+#### [Attenzione ⚠](#it-deploy-replit)
+
+<a id="it-usare-i-temi"></a>
+### Usare i temi
+
+_`username=ashutosh00710&theme=theme_name`_
+
+```md
+[![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Ashutosh00710&theme=dracula)](https://github.com/ashutosh00710/github-readme-activity-graph)
+```
+
+È disponibile anche la [personalizzazione manuale](#it-personalizzazione)
+
+<a id="it-temi-disponibili"></a>
+### Temi disponibili
+
+|            Nome            |                           Anteprima                            |
+| :------------------------: | :------------------------------------------------------------: |
+| **Default (cotton candy)** |    <img src="./asset/default.svg" height=250 alt="graph"/>     |
+|         **react**          |     <img src="./asset/react.png" height=250 alt="graph"/>      |
+|       **react-dark**       |   <img src="./asset/react-dark.svg" height=250 alt="graph"/>   |
+|         **github**         |     <img src="./asset/github.svg" height=250 alt="graph"/>     |
+|     **github-compact**     | <img src="./asset/github-compact.svg" height=250 alt="graph"/> |
+|         **xcode**          |     <img src="./asset/xcode.svg" height=250 alt="graph"/>      |
+|         **rogue**          |     <img src="./asset/rogue.svg" height=250 alt="graph"/>      |
+|         **merko**          |     <img src="./asset/merko.png" height=250 alt="graph"/>      |
+|          **vue**           |      <img src="./asset/vue.png" height=250 alt="graph"/>       |
+|      **tokyo-night**       |  <img src="./asset/tokyo-night.png" height=250 alt="graph"/>   |
+|     **high-contrast**      | <img src="./asset/high-contrast.png" height=250 alt="graph"/>  |
+
+Per altri temi clicca [qui](https://github.com/Ashutosh00710/github-readme-activity-graph/blob/main/THEMES.md)
+
+<a id="it-personalizzazione"></a>
+### Personalizzazione
+
+Personalizza l'aspetto del tuo grafico delle attività come preferisci tramite i parametri dell'URL.
+
+<a id="it-opzioni-comuni"></a>
+##### Opzioni comuni
+
+|   Argomento    |                  Descrizione                  |                  Tipo di valore                  |
+| :------------: | :-------------------------------------------: | :----------------------------------------------: |
+|   `bg_color`   |         colore di sfondo della card           |             codice esadecimale (senza `#`)       |
+| `border_color` |         colore del bordo della card           |             codice esadecimale (senza `#`)       |
+|    `color`     |     colore del testo della card del grafico   |             codice esadecimale (senza `#`)       |
+| `title_color`  |     colore del titolo della card del grafico  |             codice esadecimale (senza `#`)       |
+|     `line`     |          colore della linea del grafico       |             codice esadecimale (senza `#`)       |
+|    `point`     |  colore dei punti sul grafico a linee         |             codice esadecimale (senza `#`)       |
+|  `area_color`  |       colore dell'area sotto il grafico       |             codice esadecimale (senza `#`)       |
+|     `area`     |         mostra l'area sotto il grafico        |           booleano (predefinito: `false`)        |
+| `hide_border`  |     rende trasparente il bordo del grafico    |           booleano (predefinito: `false`)        |
+|  `hide_title`  |      imposta il titolo come stringa vuota     |           booleano (predefinito: `false`)        |
+| `custom_title` |  imposta il titolo con una stringa qualsiasi  |                     stringa                      |
+|    `theme`     |  nome di uno dei [temi disponibili](#it-temi-disponibili) |              stringa                 |
+|    `radius`    |       raggio del bordo (arrotondamento) del grafico |       numero (da 0 a 16 inclusi)         |
+|    `height`    |              altezza del grafico              |           numero (da 200 a 600 inclusi)          |
+|     `days`     |  numero di giorni da mostrare nel grafico     | numero tra 1 e 90 [consigliato sotto i 40]       |
+|     `from`     |     data da cui inizia il grafico             |              formato `YYYY-MM-DD`                |
+|      `to`      |      data in cui termina il grafico           |              formato `YYYY-MM-DD`                |
+|     `grid`     |                mostra la griglia              |           booleano (predefinito: `true`)         |
+
+⚠ **Per `custom_title` assicurati di usare %20 al posto degli spazi**
+
+Esempio:
+
+**`custom_title=This%20is%20a%20title`**
+
+```md
+[![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=ashutosh00710&custom_title=This%20is%20a%20title&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+```
+
+**Esempio:**
+
+```md
+[![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=ashutosh00710&bg_color=fffff0&color=708090&line=24292e&point=24292e&area=true&border_color=ff0000)](https://github.com/ashutosh00710/github-readme-activity-graph)
+```
+
+<a id="it-deploy-replit"></a>
+### Deploy sulla tua istanza Replit
+
+<details>
+<summary><b>Istruzioni passo passo per il deploy su Replit (dall'interfaccia)</b></summary>
+
+<a id="it-segui-i-passaggi"></a>
+#### Segui i passaggi
+
+1. Accedi a Replit o crea un nuovo account su https://replit.com
+2. Clicca sul pulsante Deploy qui sotto
+
+ <a href="https://repl.it/github/Ashutosh00710/github-readme-activity-graph">
+   <img alt="Run on Repl.it" src="https://repl.it/badge/github/Ashutosh00710/github-readme-activity-graph" style="height: 40px; width: 190px;" />
+ </a>
+
+3. Nella pagina che si apre, scegli `Node.js` come linguaggio e poi clicca sul pulsante `Import from GitHub`
+
+    ![Replit](./asset/replit1.png)
+
+4. Visita [questo link](https://github.com/settings/tokens/new?description=GitHub%20Readme%20Activity%20Graph) per creare un nuovo Personal Access Token
+5. Scorri fino in fondo e clicca su "**Generate token**"
+6. Attendi la fine della clonazione e aggiungi nei `Secrets` il tuo `Github token`
+
+    ![Secrets](./asset/replit2.png)
+
+7. Clicca sul pulsante verde `RUN` in alto: la console si avvierà e alla fine l'URL comparirà sulla destra
+8. Ora aggiungi semplicemente quanto segue al README del tuo profilo e hai finito
+
+```
+![Github Activity Graph](<url from step 5>/graph?username=<username>)
+```
+
+</details>
+
+<a id="it-deploy-vercel"></a>
+### Deploy sulla tua istanza Vercel
+
+<details>
+<summary><b>Istruzioni passo passo per il deploy su Vercel (dall'interfaccia)</b></summary>
+
+<a id="it-primo-metodo"></a>
+#### Primo metodo
+
+1.  Vai su [vercel.com](https://vercel.com/).
+2.  Clicca su `Log in`.
+    ![image](https://user-images.githubusercontent.com/3431285/235332307-a98adccf-ac8e-4c05-8fae-b14e7d0b81e8.png)
+3.  Accedi con GitHub premendo `Continue with GitHub`.
+    ![image](https://user-images.githubusercontent.com/3431285/235332299-70f52a0f-ffb9-4070-ae85-a4646a2bb1bf.png)
+4.  Accedi a GitHub e, se richiesto, consenti l'accesso a tutti i repository.
+5.  Fai il fork di questo repository.
+6.  Torna alla tua [dashboard di Vercel](https://vercel.com/dashboard).
+7.  Per importare un progetto, clicca sul pulsante `Add New...` e seleziona l'opzione `Project`.
+    ![image](https://user-images.githubusercontent.com/3431285/235332320-d80e62c9-a7d9-45f3-8bef-b8950c4c9093.png)
+8.  Clicca sul pulsante `Continue with GitHub`, cerca il repository Git che ti serve e importalo cliccando sul pulsante `Import`.
+    ![image](https://user-images.githubusercontent.com/3431285/235332373-3f28309c-d70b-490e-aa40-4d55ad429d5a.png)
+9.  Crea un personal access token (PAT) [qui](https://github.com/settings/tokens/new) e abilita i permessi `repo` (così si possono vedere anche le statistiche dei repository privati).
+    ![image](https://user-images.githubusercontent.com/3431285/235332420-df83a424-009b-4f69-bbb2-54e807bff701.png)
+10. Aggiungi il PAT come variabile d'ambiente chiamata `TOKEN`.
+    ![image](https://user-images.githubusercontent.com/3431285/235332471-6915abf8-04fe-4f5e-b734-191388a77140.png)
+11. Clicca su deploy e hai finito. Guarda i tuoi domini per usare l'API!
+
+<a id="it-secondo-metodo"></a>
+#### Secondo metodo
+
+In alternativa, clicca sul pulsante qui sotto e segui le istruzioni.
+
+[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/Ashutosh00710/github-readme-activity-graph)
+
+Una volta completato il deploy:
+
+1. Clicca sul pulsante `Continue to Dashboard`
+   ![image](https://user-images.githubusercontent.com/3431285/235332677-addafd5f-dce8-4823-9927-05657eec2084.png)
+2. Nella scheda `Settings`, clicca su `Environment Variables` e segui i passaggi `9.` e `10.` del `Primo metodo`.
+   ![image](https://user-images.githubusercontent.com/3431285/235332731-03207969-b16e-42e4-858a-67b05af7bcc8.png)
+3. Vai nella scheda `Deployments` e rifai il deploy del progetto.
+   ![image](https://user-images.githubusercontent.com/3431285/235332761-1d3ae9c5-0138-447f-a41a-601c73ef3104.png)
+
+<a id="it-infine"></a>
+#### Infine
+
+Ora aggiungi semplicemente quanto segue al README del tuo profilo e hai finito.
+
+```md
+![Github Activity Graph](<{your_own_domain_name}.vercel.app>/graph?username=<username>)
+```
+
+</details>
+
+<a id="it-contribuire"></a>
+### Contribuire
+
+Leggi le nostre [linee guida per i contributi](https://github.com/Ashutosh00710/github-readme-activity-graph/blob/main/CONTRIBUTING.md). Contengono le indicazioni per aprire le issue, gli standard di scrittura del codice e note sullo sviluppo.
+
+<a id="it-core-team"></a>
+### Core Team 💻
+
+<table>
+    <tr>
+        <td align="center">
+        <a href="http://github.com/Ashutosh00710">
+            <img src="https://avatars.githubusercontent.com/u/42907572?s=460&u=3c5c03fdddeec2483819b845bd549616d48b71e5&v=4" width="100px;" alt=""/>
+            <br />
+            <sub><b>Ashutosh Dwivedi</b></sub>
+        </a>
+        <br />
+        <a href="#projectManagement" title="Gestione del progetto">📆</a>
+        <a href="https://github.com/Ashutosh00710/github-readme-activity-graph/commits?author=ashutosh00710" title="Codice">💻</a>
+        <a href="#documentation" title="Documentazione">📖</a>
+        <a href="#ideas" title="Idee e pianificazione">🤔</a>
+        <a href="#testing" title="Test">⚠</a>
+    </td>
+    <td align="center">
+        <a href="http://github.com/kshitij978">
+            <img src="https://avatars.githubusercontent.com/u/42491256?s=460&u=db0c5e26632c9f4917db50e714cd7552c1559ba8&v=4" width="100px;" alt=""/>
+            <br />
+            <sub><b>Kshitij Srivastava</b></sub>
+        </a>
+        <br />
+        <a href="#projectManagement" title="Gestione del progetto">📆</a>
+        <a href="https://github.com/Ashutosh00710/github-readme-activity-graph/commits?author=kshitij978" title="Codice">💻</a>
+        <a href="#documentation" title="Documentazione">📖</a>
+        <a href="#design" title="Design">🎨</a>
+    </td>
+    </tr>
+</table>
+
+<a id="it-contributori"></a>
+### Contributori ✨
+
+Un grazie a tutte queste fantastiche persone ([legenda delle emoji](https://allcontributors.org/docs/en/emoji-key)): l'elenco completo dei contributori, con foto e tipo di contributo, si trova nella sezione [Contributors ✨](#contributors-) della parte in inglese.
+
+Questo progetto segue la specifica [all-contributors](https://github.com/all-contributors/all-contributors). Contributi di qualsiasi tipo sono i benvenuti!
+
+<a id="it-risorse"></a>
+### Risorse usate per costruire questo progetto
+
+|        Scopo         | Nome della libreria |                   Link                    |
+| :------------------: | :-----------------: | :---------------------------------------: |
+| Costruzione del grafico |   **CHARTIST.JS**   | <https://github.com/gionkunz/chartist-js> |
+
+</br>
+<hr/>
+
+<a id="it-cronologia-stelle"></a>
+### Cronologia delle stelle
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Ashutosh00710/github-readme-activity-graph&type=Timeline)](https://star-history.com/#Ashutosh00710/github-readme-activity-graph&Timeline)
+
+<a id="it-fatto-con"></a>
+#### Fatto con ❤ e TypeScript <img src="https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg" width="25">
+
+---
+
+<a id="english"></a>
+## 🇬🇧 English
+
 <p align="center">
     <img src="asset/logo.svg" height="150">
 </p>
